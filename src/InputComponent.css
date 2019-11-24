@@ -1,0 +1,20 @@
+label,
+input {
+  position: relative;
+  display: block;
+  padding-right: 76px;
+  width: 170px;
+  box-sizing: border-box;
+}
+
+label::after {
+  content: "." attr(data-domain);
+  position: absolute;
+  top: 4px;
+  left: 94px;
+  font-family: arial, helvetica, sans-serif;
+  font-size: 12px;
+  display: block;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: bold;
+}
