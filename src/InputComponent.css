@@ -5,12 +5,18 @@ input {
   padding-right: 76px;
   width: 170px;
   box-sizing: border-box;
+  outline: 0;
+  border-width: 0 0 2px;
+  height: 30px;
+}
+input:focus {
+  border-color: blue;
 }
 
 label::after {
   content: "." attr(data-domain);
   position: absolute;
-  top: 4px;
+  top: 10px;
   left: 94px;
   font-family: arial, helvetica, sans-serif;
   font-size: 12px;
